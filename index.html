@@ -112,7 +112,7 @@
             height: 93px;
             width: 1px;
             background-color: white;
-            margin: 0 110px;
+            margin: 0 6vw;
         }
         .image-top{
             width: 23px;
@@ -155,6 +155,64 @@
             text-align: center;
             color: grey;
         }
+        @media  screen and (max-width: 1200px){
+            body{
+                background-color:none;
+            }
+            .box{
+                flex-direction: column;
+            }
+            .secondSection .vertical{
+                height: unset;
+            }
+            .vertical-title, .vertical-desc{
+                left: 48px;
+            }
+            footer{
+                display: none;
+            }
+            .secondSection.box{
+                width: 50vw;
+            }
+            .firstsection{
+                flex-direction: column-reverse;
+            }
+            nav{
+                flex-direction: column;
+            }
+            .leftsection{
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .rightsection{
+                width: 380px !important;
+                display: flex;
+                justify-content: center;
+            }
+            .rightsection img{
+                width: 45vw;
+                margin-bottom: 72px;
+
+            }
+            .secondSection {
+                max-width: 80vw;
+                margin: auto;
+                height: 141vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            body{
+                min-width: fit-content;
+            }
+            .image-top{
+                top: 140px;
+            }
+        }
+       
 
     </style>
 </head>
@@ -178,7 +236,7 @@
     <main>
         <section class="firstsection">
             <div class="leftsection">
-                Hi, My name is <span class="purple">Rajesh</span>
+                <div>Hi, My name is <span class="purple">Rajesh</span> </div>
 
                 <div>and I am a Passionate</div>
                 <span id="element"></span>
